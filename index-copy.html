@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Do you wanna know about me?</title>
+    <!--ajax import-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--css import-->
+    <link href="style-copy.css" rel="stylesheet" type="text/css" />
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <script>
+      var timeOut;
+      function scrollToTop() {
+          if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
+              window.scrollBy(0,-50);
+              timeOut=setTimeout('scrollToTop()',10);
+          }
+          else clearTimeout(timeOut);
+      }
+      function show() {
+        let status = $(`#showHide`).css('display');
+        if(status == 'none') {
+          $(`#showHide`).show();
+        }
+      }
+
+      function hide() {
+        let status = $(`#showHide`).css('display');
+        if(status == 'block') {
+          $(`#showHide`).hide();
+        }
+      }
+
+      function climbing() {
+          $(`#ex-climbing`).show()
+          $(`#ex-travel`).hide()
+          $(`#ex-dance`).hide()
+          $(`#travel`).hide()
+          $(`#dance`).hide()
+          $(`#climbing`).show()
+      }
+      function travel() {
+          $(`#ex-climbing`).hide()
+          $(`#ex-travel`).show()
+          $(`#ex-dance`).hide()
+          $(`#climbing`).hide()
+          $(`#dance`).hide()
+          $(`#travel`).show()
+      } 
+
+      function dance() {
+          $(`#dance`).show()
+          $(`#ex-climbing`).hide()
+          $(`#ex-travel`).hide()
+          $(`#ex-dance`).show()
+          $(`#travel`).hide()
+          $(`#climbing`).hide()
+        }
+      
+  </script>
+  </head>
+  <body>
+    <div class="firstPage">
+      <h1 class="hello">안녕!🤚 나에 대해 알고 싶어?</h1>
+      <button class="yes-btn">Sure! Why not?</button>
+      <p class="hiddenMessage">
+        스크롤을 내려봐
+      </p>
+    </div>
+    
+    <div class="secondPage">
+      <header>
+        About Me
+      </header>
+      <div class="content">
+        <img src="images/mia.jpg" alt="mia">
+        <div class="aboutMe">
+          <p>
+            안녕 나는 지연이라고 해.</br>
+            내 MBTI는 ISFP야.</br>
+            "호기심 많은 예술가"라는 이름에 맞게<br> 나는 참 다양한 일에 관심이 많고 도전 해보려해!</br>
+            앞으로도 계속 도전하는 삶을 살 예정이야.</br>
+            내 삶을 응원해 줘😍
+            <div class="goUp" onclick="scrollToTop();return false;">
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="thirdPage">
+     <header>
+        Experience
+      </header> 
+      <section class="timeLine">
+        <ol>
+          <li>
+            <div>
+              <time>1995.11.16</time>
+              <p>내가 태어난 날!</p><img src="/images/babyMia.JPG">
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>2014.03 ~ 2018.02</time>
+              <p><br>장안대학교 <br>항공관광과</p><img src="/images/universityMia.jpg">
+            </div>
+          </li><li>
+            <div>
+              <time>2016.06 ~ 2016.12</time>
+              <p>캐나다</p><img src="/images/canadaMia.jpg">
+            </div>
+          </li><li>
+            <div>
+              <time>2017.12 ~ 2021. 10</time>
+              <p>웨스틴 조선호텔</p><img src="/images/rubricaMia.JPG">
+            </div>
+          </li><li>
+            <div>
+              <time>2021.10 ~ 2022.10</time>
+              <p>GnB영어학원</p><img src="/images/GnBMia.JPG">
+            </div>
+          </li>
+          <li>
+            <div>
+              내 미래가 궁금해지지 않니?
+            </div>
+          </li>
+        </ol>
+      </section>
+      <div class="goUp" onclick="scrollToTop();return false;"></div>
+    </div>
+
+    <div class="fourthPage">
+      <header>
+        Interest
+      </header>
+      <div class="content">
+        <div class="chat">        
+          <div class="mia-profile">
+            <img class="mia" src="/images/profile.JPG">
+            <p>지연</p>
+          </div>
+          <div class="ask">
+            <div class="speech-bubble">혹쉬.. 내 취미도 보고갈래?</div>
+            <div class="answer-bubble">
+              <button onclick="show()">응</button>
+              <button onclick="hide()">아니</button>
+            </div>
+          </div>
+          <div id="showHide">
+            <div class="mia-profile">
+              <img class="mia" src="/images/profile.JPG">
+              <p>지연</p>
+            </div>
+            <div class="ask">
+              <div class="speech-bubble">내 취미는...</div>
+              <div class="speech-bubble">
+                <button onclick="climbing()">등산</button>
+              <button onclick="travel()">여행</button>
+              <button onclick="dance()">춤</button>
+              </div>
+            </div>        
+          </div>
+        </div>
+        <div id="showInterest">
+          <div class="images">
+            <div id="climbing">
+              <img src="/images/m2-사패.JPG">
+              <img src="/images/m3-도봉.jpg">
+              <img src="/images/m5-북한.JPG">
+            </div>
+            <div id="travel">
+              <img src="/images/t1-터키.JPG">
+              <img src="/images/t2-일본.JPG">
+              <img src="/images/t3-경주.JPG">
+              <img src="/images/t4-러시아.JPG">
+              <img src="/images/t5-제주도.JPG">
+              <img src="/images/t7-뉴욕.JPG">
+            </div>
+            <div id="dance">
+              <img src="/images/dance.jpg">
+            </div>
+          </div>
+          <div class="explain">
+            <p id="ex-climbing">
+              나는 지금까지 인왕산, 도봉산, 사패산, 수락산, 북한산을 가봤어.<br>
+              겁이 많아 항상 내려올 때는 무서워하지만<br>
+              정상에서 보는 풍경은 무서움을 없애줄만큼 멋있어!<br>
+              등산을 혹시 좋아한다면 나와함께 등산하지 않겠어?👊
+            </p>
+            <p id="ex-travel">
+              캐나다, 뉴욕, 일본, 터키, 베트남, 러시아, 홍콩, 그리고 국내까지 
+              새로운 곳에서 새로운 사람을 만나는 것은 굉장히 재밌는 경험이야!!
+            </p>            
+            <p id="ex-dance">
+              나는 참 흥이 많은 편이야!<br>
+              춤을 잘 추지는 못 하지만 인스타그램으로 영상을 공유하고 있어<br>
+              꼭 잘 추는 사람만 공유하란 법은 없잖아?<br>
+              만약 나의 영상이 궁금하다면 @miya___ho를 팔로우해줘🫵
+            </p>     
+          </div>
+        </div>
+        <div class="goUp" onclick="scrollToTop();return false;">
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
