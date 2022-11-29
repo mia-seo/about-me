@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contactMe.css" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <header>
+      <h1 style="font-size: 2rem">Contact Me</h1>
+      <a href="./home.html"
+        ><div><img src="./images/home.png" /></div
+      ></a>
+    </header>
+    <div class="container">
+      <div style="font-size: 2rem">
+        If you want to contact me, please don't hesitate.
+      </div>
+
+      <div id="getInfoBox">
+        <div id="firstInfo">
+          <div id="name">
+            <span style="color: red">*</span>NAME: &nbsp
+            <input type="text" />
+          </div>
+          <div id="email">
+            <span style="color: red">*</span>EMAIL: &nbsp
+            <input type="text" />
+          </div>
+        </div>
+        <div id="secondInfo">
+          <div id="message">
+            <p><span style="color: red">*</span>MESSAGE: &nbsp</p>
+            <textarea></textarea>
+          </div>
+        </div>
+        <div id="submit">
+          <button id="btn" onclick="notYetMsg()">submit</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="contactMe.js"></script>
+  </body>
+</html>

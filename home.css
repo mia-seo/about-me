@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  width: 75vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 35%;
+  color: #e3ab9a;
+}
+
+#homeName {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+}
+
+#subName {
+  width: 100%;
+  height: 35%;
+  font-size: 3em;
+  margin-bottom: 0%;
+}
+
+#mainName {
+  width: 100%;
+  height: 65%;
+  text-align: right;
+  font-size: 5em;
+  margin-top: 0;
+}
+
+#menuBar {
+  width: 30%;
+  height: 50%;
+  padding-top: 5%;
+  text-align: right;
+}
+
+#menuBar:hover {
+  cursor: pointer;
+}
+
+#toggle {
+  width: 80%;
+  display: none;
+  list-style: none;
+  justify-content: space-evenly;
+  border: 1px solid #e3ab9a;
+  padding: 2%;
+  position: relative;
+  left: 25%;
+  top: 5%;
+  background-color: white;
+}
+
+#toggle a {
+  text-decoration: none;
+  font-weight: normal;
+  color: white;
+}
+
+#toggle li {
+  border: 1px solid #e3ab9a;
+  padding: 2%;
+  width: 105%;
+  background-color: #e3ab9a;
+}
+
+#characters {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+figcaption {
+  opacity: 0;
+  color: #f5e1da;
+  text-align: left;
+  font-size: large;
+}
+
+ul {
+  margin-block-start: 0;
+}
+
+article {
+  width: 24%;
+  height: 100%;
+  text-align: center;
+}
+
+article:nth-child(1) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url(./images/lofi_first.png);
+  background-size: cover;
+}
+
+article:nth-child(1):hover figcaption {
+  opacity: 1;
+}
+
+article:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url(./images/lofi_second.png);
+  background-size: cover;
+}
+
+article:nth-child(2):hover figcaption {
+  opacity: 1;
+}
+
+article:nth-child(3) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url(./images/lofi_third.png);
+  background-size: cover;
+}
+
+article:nth-child(3):hover figcaption {
+  opacity: 1;
+}
+
+article:nth-child(4) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url(./images/lofi_forth.png);
+  background-size: cover;
+}
+
+article:nth-child(4):hover figcaption {
+  opacity: 1;
+}
+
+h3 {
+  color: #f5e1da;
+  font-size: 1.5em;
+}
+
+#menuImg {
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin-left: 85%;
+}
+
+#xImg {
+  width: 32px;
+  height: 32px;
+  display: none;
+  margin-left: 85%;
+}

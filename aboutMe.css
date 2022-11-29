@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: "Gamja Flower", cursive;
+  font-size: 1.1rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  width: 75vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10%;
+  color: #e3ab9a;
+}
+
+header > a {
+  width: 32px;
+  padding-top: 30px;
+}
+
+#dividedThreePart {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80%;
+}
+
+.parts {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  height: 100%;
+}
+
+#profile {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #e3ab9a;
+  font-weight: bolder;
+}
+
+#profile > div > img {
+  width: 90%;
+  border-radius: 50%;
+}
+
+#profile > p {
+  margin: 0;
+}
+
+#explainAboutMe {
+  padding: 30px;
+  width: 100%;
+  height: 20%;
+  border-top: 2px dashed #e3ab9a;
+  border-right: 2px solid #e3ab9a;
+}
+
+.displayColumn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #e3ab9a;
+}
+
+.displayRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boxSize {
+  width: 100%;
+  height: 33%;
+}
+
+.skills {
+  width: 33%;
+  height: 80%;
+}
+
+.hobbies,
+.contacts {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+
+.contacts {
+  margin-top: 5em;
+}
+
+#experience {
+  border-left: 2px solid #e3ab9a;
+}
+
+#experience > p {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+  width: 100%;
+  height: 40%;
+}
+
+li:nth-child(even) {
+  border-left: 2px solid #e3ab9a;
+}
+
+.headline {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
