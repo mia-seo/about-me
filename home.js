@@ -13,3 +13,6 @@ function toMenu() {
   xBar.style.display = "none";
   toggle.style.display = "none";
 }
+
+menuBar.addEventListener("click", toX);
+xBar.addEventListener("click", toMenu);

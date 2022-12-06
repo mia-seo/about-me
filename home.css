@@ -116,6 +116,7 @@ article:nth-child(1) {
 
 article:nth-child(1):hover figcaption {
   opacity: 1;
+  transition: opacity 2s;
 }
 
 article:nth-child(2) {
@@ -126,6 +127,7 @@ article:nth-child(2) {
 
 article:nth-child(2):hover figcaption {
   opacity: 1;
+  transition: opacity 2s;
 }
 
 article:nth-child(3) {
@@ -136,6 +138,7 @@ article:nth-child(3) {
 
 article:nth-child(3):hover figcaption {
   opacity: 1;
+  transition: opacity 2s;
 }
 
 article:nth-child(4) {
@@ -146,6 +149,7 @@ article:nth-child(4) {
 
 article:nth-child(4):hover figcaption {
   opacity: 1;
+  transition: opacity 2s;
 }
 
 h3 {
