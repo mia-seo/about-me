@@ -19,27 +19,27 @@
         If you want to contact me, please don't hesitate.
       </div>
 
-      <div id="getInfoBox">
+      <form id="getInfoBox">
         <div id="firstInfo">
           <div id="name">
-            <span style="color: red">*</span>NAME: &nbsp
-            <input type="text" />
+            <label for="nameValue">NAME: &nbsp</label>
+            <input type="text" id="nameValue" required />
           </div>
           <div id="email">
-            <span style="color: red">*</span>EMAIL: &nbsp
-            <input type="text" />
+            <label for="emailValue">EMAIL: &nbsp</label>
+            <input type="text" id="emailValue" required />
           </div>
         </div>
         <div id="secondInfo">
           <div id="message">
-            <p><span style="color: red">*</span>MESSAGE: &nbsp</p>
-            <textarea></textarea>
+            <label for="msgValue">MESSAGE: &nbsp</label>
+            <textarea required id="msgValue"></textarea>
           </div>
         </div>
         <div id="submit">
-          <button id="btn" onclick="notYetMsg()">submit</button>
+          <button id="btn">submit</button>
         </div>
-      </div>
+      </form>
     </div>
     <script type="text/javascript" src="contactMe.js"></script>
   </body>

@@ -73,8 +73,12 @@ input {
   border-style: solid;
 }
 
+label[for="msgValue"] {
+  margin-top: 20px;
+}
+
 textarea {
-  width: 400px;
+  width: 450px;
   height: 100px;
   border-radius: 15px;
   border: 2px solid #e3ab9a;
